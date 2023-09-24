@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import FormElements from "./whitelist";
 export default function Hero() {
   return (
     <div className="lg:max-w-[1135px] mx-auto mt-20 mb-5">
       <div className="flex flex-col min-[700px]:flex-row  bg-[#006097] rounded-3xl ">
-        <div className="flex flex-col justify-between md:justify-evenly p-5 px-7  min-[700px]:w-1/2 space-y-4">
-          <h1 className="flex flex-wrap font-medium  text-left md:text[40px] text-3xl  md:mt-12 md:mt14 md:text-6xl text-white">
+        <div className="flex flex-col justify-between p-5 md:py-14 py-5  min-[700px]:w-1/2 space-y-2">
+          <h1 className="flex flex-wrap font-medium  text-left md:text[40px] text-3xl md:text-6xl text-white">
             Xarbon&nbsp; <span> Xredit </span>
           </h1>
 
@@ -14,61 +15,10 @@ export default function Hero() {
             XRPL blockchain where individuals can rate companies based on their
             environmental activities.
           </p>
-          <div className=" block md:h36 md:h-32"></div>
+          <div className="flex "></div>
           {/* Hero Button */}
           <div className="flex min-[990px]:flex-row flex-col justify-start  min-[990px]:space-x-3 min-[990px]:space-y-0 space-y-3">
-            <Link href="/compete" className="flex bg-black">
-              <button className="w-full min-[990px]:text-lg text-base  flex items-center p-[1px] justify-between bg-gradient-95 from-button-start from-[-20%] via-button-mid via-46% to-button-end to-110% rounded-lg">
-                <div className="hover:bg-[#0f0f0f] bg-transparent p-3 flex flex-row rounded-lg w-full justify-between text-white ">
-                  <h1 className="flex">Apply</h1>
-                  <span className="ml-2 flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="27"
-                      height="26"
-                      fill="none"
-                      viewBox="0 0 31 26"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="3"
-                        d="M2 2l13.428 11.237L2 24.474M16 2l13.428 11.237L16 24.474"
-                      ></path>
-                    </svg>
-                  </span>
-                </div>
-              </button>
-            </Link>
-            <Link
-              href="http://eepurl.com/ibu1vL"
-              target="_blank"
-              className="flex "
-            >
-              <button className="w-full min-[990px]:text-lg text-base  flex items-center p-[1px]  bg-gradient-95 from-button-start from-[-20%] via-button-mid via-46% to-button-end to-110% rounded-lg">
-                <div className="bg-[#a29083] hover:bg-transparent flex flex-row rounded-lg p-3 w-full justify-between text-white ">
-                  <h1 className="flex">Join Newsletter</h1>
-                  <span className="ml-2 flex">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="27"
-                      height="26"
-                      fill="none"
-                      viewBox="0 0 31 26"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="3"
-                        d="M2 2l13.428 11.237L2 24.474M16 2l13.428 11.237L16 24.474"
-                      ></path>
-                    </svg>
-                  </span>
-                </div>
-              </button>
-            </Link>
+            <FormElements />
           </div>
         </div>
         {/* className="overflow-hidden bg-gray600 bg-bgtable rounded-[1.25rem]
