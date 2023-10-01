@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import FormElements from "./whitelist";
+import SubmitReport from "./submitReport";
 export default function Hero() {
   return (
     <div className="lg:max-w-[1135px] mx-auto mt-20 mb-5">
@@ -19,6 +20,7 @@ export default function Hero() {
           {/* Hero Button */}
           <div className="flex min-[990px]:flex-row flex-col justify-start  min-[990px]:space-x-3 min-[990px]:space-y-0 space-y-3">
             <FormElements />
+            <SubmitReport />
           </div>
         </div>
         {/* className="overflow-hidden bg-gray600 bg-bgtable rounded-[1.25rem]

@@ -99,7 +99,7 @@ export default function FormElements() {
                 href="/modal"
                 className="text-cyan-700 hover:underline dark:text-cyan-500"
               >
-                Submit SDG Report
+                Submit a SDG Report
               </a>
             </div>
           </div>
